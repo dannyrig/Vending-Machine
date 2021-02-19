@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vending Machine</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <style>
+			       .items {
+				           border: solid;
+				           margin: 30px;
+				           font-size: 1.1em;
+				           height: 200px;
+			}
+
+		</style>
+    </head>
+
+<body>
+  <div class="container">
+    <h1 class="text-center">Vending Machine</h1>
+    <hr style="border-top:2px solid">
+
+    <div class="col-md-8 item"></div>
+    <div id="IdHolderDiv">
+      <input type ="hidden" id="ItemIDS"/>
+			</div>
+
+      <div class="col-md-4">
+				<div class="row">
+
+          <h2 class = "col-md-11 text-center"> Total $ In </h2>
+
+          					<div class="row">
+          						<div class="col-md-2"></div>
+
+          						<div class="form-group col-md-7">
+          							<input type="text" readonly class="form-control text-center" style="font-size:1.5em" id="money-amount-field"/>
+          						</div>
+
+          						<div class="col-md-2"></div>
+          					</div>
+
+                    <div class="row">
+                  <button type="button"
+                          id="addDollar"
+                          class="btn btn-primary col-md-4">
+                      Add Dollar
+                  </button>
+                <div class="col-md-3">
+                  </div>
+
+                <button type="button"
+                        id="addQuarter"
+                        class="btn btn-primary col-md-4">
+                    Add Quarter
+                </button>
+          </div>
+
+          <br>
+          <div class="row">
+            <button type="button"
+                    id="addDime"
+                    class="btn btn-primary col-md-4">
+                Add Dime
+            </button>
+        <div class="col-md-3">
+            </div>
+          <button type="button"
+                  id="addNickel"
+                  class="btn btn-primary col-md-4">
+              Add Nickel
+          </button>
+    </div>
+<hr style="border-top:2px solid; margin-right: 30px">
+</div>
+<div class="row">
+
+  <h2 class = "col-md-11 text-center"> Messages </h2>
+
+  <div class="row">
+    <div class="col-md-2"></div>
+
+    <div class="form-group col-md-11">
+      <input type="text" readonly class="form-control text-center" id="messages-field"/>
+    </div>
+  </div>
+
+    <div class="row">
+    <span class="col-md-3" style="font-size: 2.0em">Item:</span>
+    <div class="form-group col-md-7">
+      <input type="text" readonly class="form-control text-center" style="margin-top:3.5px; font-size:1.5em" id="item-field"/>
+    </div>
+</div>
+
+<div class="row">
+<button type="button"
+      id="makePurchase"
+      class="btn btn-primary col-md-8"
+      style="margin-left: 60px; margin-top:5px">
+  Make Purchase
+</button>
+</div>
+
+<hr style="border-top:2px solid; margin-right: 30px">
+
+<div class="row">
+
+  <h2 class = "col-md-11 text-center"> Change </h2>
+
+  <div class="row">
+    <div class="col-md-2"></div>
+
+    <div class="form-group col-md-7">
+      <input type="text" readonly class="form-control text-center" id="change-field"/>
+    </div>
+    </div>
+    <div class="row">
+  <button type="button"
+          id="giveChange"
+          class="btn btn-primary col-md-5"
+          style="margin-left: 110px">
+      Change Return
+  </button>
+  </div>
+
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="js/home.js"></script>
+
+</body>
+
+
+</html>
